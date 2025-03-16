@@ -11,7 +11,7 @@ class Product extends Model
     //
     use HasFactory;
 
-    protected $fillable = ['name', 'description', 'price', 'qr_code_path'];
+    protected $fillable = ['name', 'description', 'price', 'image'];
 protected $casts = [
     'checkbox_items' => 'array',
     ];

@@ -30,7 +30,7 @@
                         <td class="px-4 py-2 text-sm text-gray-700">{{ $product->name }}</td>
                         <td class="px-4 py-2 text-sm text-gray-700">${{ $product->price }}</td>
                         <td class="px-4 py-2 text-sm text-gray-700">
-                            <!-- @if($product->qr_code_path)
+                            <!-- @if($product->image)
                                 <img src="data:image/png;base64,{{ base64_encode($product->qr_code) }}" alt="QR Code"
                                     width="100" class="rounded-md shadow-sm">
                             @endif -->
@@ -76,7 +76,7 @@
 
                 // Add QR code
                 printWindow.document.write('<div style="margin-top: 20px;">');
-                printWindow.document.write('<img src="' + product.qr_code_path + '" alt="QR Code" width="150">');
+                printWindow.document.write('<img src="' + product.image + '" alt="QR Code" width="150">');
                 printWindow.document.write('</div>');
 
                 printWindow.document.write('</body></html>');

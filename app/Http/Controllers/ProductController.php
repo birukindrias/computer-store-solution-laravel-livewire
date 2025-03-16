@@ -77,14 +77,14 @@ class ProductController extends Controller
 
         if ($request->hasFile('qr_code')) {
             $path = $request->file('qr_code')->store('qr_codes', 'public');
-            $product->qr_code_path = $path;
+            $product->image = $path;
             $product->save();
         }
 
         $product->checkbox_items = $request->input('checkbox_items', []);
         $product->save();
 
-        return redirect()->route('products.index')->with('success', 'Product created successfully!');
+        return redirect('/')->with('success', 'Product created successfully!');
     }
     // Show the form to edit an existing product
     public function edit(Product $product)

@@ -31,9 +31,9 @@
             <div class="mb-4">
                 <label for="qr_code" class="block text-sm font-medium text-gray-700">QR Code Image</label>
                 <input type="file" name="qr_code" id="qr_code" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                @if($product->qr_code_path)
+                @if($product->image)
                     <div class="mt-2">
-                        <img src="{{ asset('storage/' . $product->qr_code_path) }}" alt="QR Code" class="w-24 h-24 object-cover">
+                        <img src="{{ asset('storage/' . $product->image) }}" alt="QR Code" class="w-24 h-24 object-cover">
                    {{ asset($product->image) }}
                    </div>
                 @endif

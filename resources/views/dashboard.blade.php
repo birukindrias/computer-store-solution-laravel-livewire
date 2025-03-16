@@ -32,13 +32,13 @@
                                     class="inline-block px-4 py-2 bg-yellow-500 text-white font-semibold rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400">
                                     Edit
                                 </a>
-                                <a href="{{ route('products.print', $product->id) }}"
+                                <!-- <a href="{{ route('products.print', $product->id) }}"
                                     class="inline-block px-4 py-2 bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400">
                                     Print
-                                </a>
+                                </a> -->
                                 <button onclick="printQRCode({{ $product->id }})"
                                     class="inline-block px-4 py-2 bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400">
-                                    Print QR Code
+                                    Print 
                                 </button>
                             </td>
                             <td class="px-4 py-2 text-sm text-gray-700">
